@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android WebSockify</string>
+    <string name="default_web_port">8080</string>
+    <string name="default_vnc_port">6444</string>
+    <string name="web_port_label">Web Port</string>
+    <string name="vnc_port_label">VNC Port</string>
+    <string name="log_data">No Data yet..!</string>
+</resources>

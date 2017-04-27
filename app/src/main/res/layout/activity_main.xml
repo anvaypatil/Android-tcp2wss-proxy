@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="connect.vnc.android.activity.MainActivity">
+
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:text="@string/web_port_label"
+        android:layout_alignBaseline="@+id/web_port"
+        android:layout_alignBottom="@+id/web_port"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+    <EditText android:id="@+id/web_port"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:text="@string/default_web_port"
+        android:enabled="true"/>
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="29dp"
+        android:text="@string/vnc_port_label"
+        android:id="@+id/textView"
+        android:layout_marginStart="29dp"
+        android:layout_alignBaseline="@+id/vnc_port"
+        android:layout_alignBottom="@+id/vnc_port"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText android:id="@+id/vnc_port"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/web_port"
+        android:layout_alignParentRight="true"
+        android:text="@string/default_vnc_port"
+        android:enabled="true"/>
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Start Server"
+        android:layout_below="@+id/vnc_port"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="11dp"
+        android:id="@+id/start_server_button" />
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Stop Server"
+        android:id="@+id/stop_server_button"
+        android:layout_above="@+id/editText"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start_server_button"
+        android:layout_alignStart="@+id/start_server_button"
+        android:layout_below="@+id/start_server_button"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:text="@string/log_data"
+        android:inputType="textMultiLine" />
+
+</android.widget.RelativeLayout>
