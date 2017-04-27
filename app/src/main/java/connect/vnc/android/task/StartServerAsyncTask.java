@@ -14,7 +14,7 @@ public class StartServerAsyncTask extends AsyncTask<String, Void, String> {
     protected String doInBackground(String[] params) {
         // do above Server call here
         try {
-            if(BadPatternHolder.ws!=null)
+            if(BadPatternHolder.ws==null)
                 BadPatternHolder.ws=new WebSockify();
 
             BadPatternHolder.ws.doMain(params);

@@ -15,6 +15,7 @@ public class OutboundWebsocketHandler extends OutboundHandler {
     protected Object processMessage ( ChannelBuffer buffer ) {
     	// Encode the message to base64
     	ChannelBuffer base64Msg = Base64.encode(buffer, false);
+        System.out.println("Sending packets");
     	return new TextWebSocketFrame(base64Msg);
     }
 }

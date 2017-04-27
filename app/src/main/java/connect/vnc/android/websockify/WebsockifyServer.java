@@ -78,6 +78,7 @@ public class WebsockifyServer {
 		if ( serverChannel != null && serverChannel.isBound() )
 		{
 			serverChannel.close();
+			System.out.println("Closing the socket");
 			serverChannel = null;
 		}
 	}
